@@ -7,8 +7,8 @@ Desarrollado para [MISIÓN TIC](https://www.misiontic2022.gov.co/portal/).
 
 |            Nombre                |                      Github nickname                      |      Rol       |
 |----------------------------------|-----------------------------------------------------------|----------------|
-| Juan Miguel Isaza Moreno         | [capitanisaza](https://github.com/capitanisaza)           | Desarrollador  |
-| Nicolás Fernando Blanco Blanco   |      [nblancob](https://github.com/nblancob)              | Desarrollador  |
-| Leidy Johana Quintero            |          [leidy]()                                        | Scrum Master   |
-| Cristhian David Roncancio        |         [crisdaid](https://github.com/Cdavid111)           |Product Manager |
-| Jeovanis Herrera Pertuz          |   [jeovanis]()                                            | Desarrollador  |
+| Cristhian David Roncancio        | [crisdaid](https://github.com/Cdavid111)                  | Desarrollador  |
+| Santiago Carvajal Lara           | [santiagocarvajallara7](https://github.com/Santiago-0714) | Scrum Master  |
+| Elionardo Rueda Pérez            | [elionardorueda]()                                        | Desarrollador  |
+| Juan Pablo Martinez Murillo      | [juanpabloxfull]()                                        |Product Manager |
+| Marlon Esteban Parra             | [marlonaguilera9]()                                       | Desarrollador  |
