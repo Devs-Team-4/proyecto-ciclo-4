@@ -32,5 +32,5 @@ Para el desarrollo del proyecto se usará el lenguaje [JavaScript](https://devel
 ### Santiago Carvajal Lara 🚀
 Soy Santiago Carvajal Lara el actual desarrollador del equipo "Devs Team 4", soy un estudiante, curso tercer semestre de Ingenieria Informatica del Instituto Universitario Politecnico Jaime Isaza Cadavid, resido en el departamento de Antioquia en el mucipio de Carepa en la zona de Urabá.
 
-### Cristhian David Roncancio Alfonso 🚀
+### Cristhian David Roncancio 🚀
 Soy estudiante de Ingeniería de Sistemas de la Universidad Nacional de Colombia, aspirante a Ingeniería Aeroespacial en la Univerdad de Antioquia y en formación en el programa MisionTic2022. Busco tener una proyección innovadora que preste soluciones tecnologícas orientadas a las áreas científicas , que pueden contribuir al desarrollo de mi país. Me gusta también dedicar buen tiempo al desarrollo de software , los idiomas y tengo presente que estar aprendiendo constantemente permite ser competente ante los requerimientos profesionales de cada día.
