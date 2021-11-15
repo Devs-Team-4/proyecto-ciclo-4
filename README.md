@@ -29,7 +29,7 @@ Para el desarrollo del proyecto se usará el lenguaje [JavaScript](https://devel
 
 ## Descripción de los integrantes 💻:
 
-##Santiago Carvajal Lara
+### Santiago Carvajal Lara 🚀
 Soy Santiago Carvajal Lara el actual desarrollador del equipo "Devs Team 4", soy un estudiante, curso tercer semestre de Ingenieria Informatica del Instituto Universitario Politecnico Jaime Isaza Cadavid, resido en el departamento de Antioquia en el mucipio de Carepa en la zona de Urabá.
 
 ### Cristhian David Roncancio Alfonso 🚀
