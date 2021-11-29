@@ -13,6 +13,12 @@ Desarrollado para [MISIÓN TIC](https://www.misiontic2022.gov.co/portal/).
 | Juan Pablo Martinez Murillo      | [juanpabloxfull]()                                        | Product owner        |
 | Marlon Esteban Parra             | [marlonaguilera9]()                                       | Administrador de DB  |
 
+## Software architecture 💻:
+- User managment module: it allows the user registration, log in, user's profile management and user's state managment.
+- Projects managment module: it allow the projects management, create and register new project and view projects details.
+- Inscriptions managment module: it allow students to enroll in a project.
+- Progress managment module: it allow students to track their progress and list it.
+
 ## Requisitos 👓:
 Para el desarrollo del proyecto se usará el lenguaje [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript), y el stack tecnológico a emplear será:
 - [React JS](https://es.reactjs.org/)
