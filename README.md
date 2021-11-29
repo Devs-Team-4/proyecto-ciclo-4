@@ -9,9 +9,7 @@ Desarrollado para [MISIÓN TIC](https://www.misiontic2022.gov.co/portal/).
 |----------------------------------|-----------------------------------------------------------|----------------------|
 | Cristhian David Roncancio        | [crisdaid](https://github.com/Cdavid111)                  | Analista             |
 | Santiago Carvajal Lara           | [santiagocarvajallara7](https://github.com/Santiago-0714) | Scrum Master         |
-| Elionardo Rueda Pérez            | [elionardorueda]()                                        | Desarrollador        |
-| Juan Pablo Martinez Murillo      | [juanpabloxfull]()                                        | Product owner        |
-| Marlon Esteban Parra             | [marlonaguilera9]()                                       | Administrador de DB  |
+| Marlon Esteban Parra             | [marlonaguilera9](https://github.com/Marlon07)            | Administrador de DB  |
 
 ## Requisitos 👓:
 Para el desarrollo del proyecto se usará el lenguaje [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript), y el stack tecnológico a emplear será:
