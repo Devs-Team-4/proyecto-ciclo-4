@@ -13,7 +13,7 @@ Desarrollado para [MISIÓN TIC](https://www.misiontic2022.gov.co/portal/).
 
 ## Software architecture 💻:
 
-![Screenshot](structure.png)
+![Screenshot](https://lms.misiontic2022udea.com/pluginfile.php/83839/mod_page/content/49/Metodolog%C3%ADa_Figura1%20%281%29.png)
 
 - User managment module: it allows the user registration, log in, user's profile management and user's state managment.
 - Projects managment module: it allow the projects management, create and register new project and view projects details.
