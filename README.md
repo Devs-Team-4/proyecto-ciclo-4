@@ -28,6 +28,7 @@ Para el desarrollo del proyecto se usará el lenguaje [JavaScript](https://devel
 - [HTML 5](https://developer.mozilla.org/es/docs/Web/HTML)
 - [CSS3](https://developer.mozilla.org/es/docs/Web/CSS)
 - [Node.js](https://nodejs.org/es/)
+- [Graphql](https://graphql.org/)
 
 ## Lista de tareas ✔️:
 - [x] Crear el repositorio del proyecto.
@@ -35,6 +36,7 @@ Para el desarrollo del proyecto se usará el lenguaje [JavaScript](https://devel
 - [] Actualizar el readme.
 - [] Desarrollar la interfaz 
 - [] Desarrollar la funcionalidad
+-
 
 ## Descripción de los integrantes 💻:
 
