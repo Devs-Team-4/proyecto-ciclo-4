@@ -14,6 +14,9 @@ Desarrollado para [MISIÓN TIC](https://www.misiontic2022.gov.co/portal/).
 | Marlon Esteban Parra             | [marlonaguilera9]()                                       | Administrador de DB  |
 
 ## Software architecture 💻:
+
+![Screenshot](structure.png)
+
 - User managment module: it allows the user registration, log in, user's profile management and user's state managment.
 - Projects managment module: it allow the projects management, create and register new project and view projects details.
 - Inscriptions managment module: it allow students to enroll in a project.
