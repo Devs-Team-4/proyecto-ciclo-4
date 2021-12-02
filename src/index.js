@@ -1,8 +1,9 @@
 //Este es el archivo principal donde se va a ejecutar nuestra aplicación
 //Importaciones a Librerias
 const express = require('express');
-const morgan = require('morgan');
 const mongoose = require('mongoose');
+const morgan = require('morgan');
+const {ApolloServer} = require('apollo-server-express');
 
 //Importaciones a servicos propios
 const routes = require('./endpoints/index');
@@ -13,11 +14,11 @@ const user = require('./services/user');
 const app = express();
 
 //Connect to DataBase
-urldb = 'mongodb+srv://cdavid111:David111@cluster0.shcxl.mongodb.net/test'
+urldb = 'mongodb+srv://cdavid111:David111@cluster0.shcxl.mongodb.net/DB_MisionTic_Ciclo4';
 mongoose.connect(urldb)
-.then( () => {
+.then( async () => {
     console.log('Connected to DataBase');
-    app.listen(app.get('port'), ()=>{
+    app.listen(app.get('port'), async ()=>{
         console.log(`Server listening on port ${app.get('port')}`);
         //user.createUser()
     })
