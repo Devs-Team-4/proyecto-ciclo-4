@@ -5,8 +5,8 @@ const User = require('./user');
 const projectSchema = new Schema({
     nombre:{type:String},
     objetivo : {type:String},
-    presupuesto : {type:Number},
-    fechaInicio: {type:Date},
+    presupuesto : {type:String},
+    fechaInicio: {type:Date,default: Date.now},
     fechaFin: {type:Date},
     owner : {
         type:Schema.Types.ObjectId,

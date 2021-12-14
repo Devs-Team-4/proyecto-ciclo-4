@@ -3,9 +3,9 @@ const Schema = mongoose.Schema;
 const Project = require('./project');
 
 const userSchema = new Schema({
-    nombre:{type:String,required:false},
+    nombre:{type:String},
     apellido: {type:String},
-    identificacion : {type:String,unique},
+    identificacion : {type:String},
     correo: {type:String,required:true},
     password : {type:String,required:true},
     rol : {type:String},
