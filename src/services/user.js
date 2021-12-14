@@ -3,7 +3,7 @@ const User = require('../models/user');
 //Create User
 createUser = async (user) => {
     let userInstance = new User(user)
-    let user1 = await userInstance.save()
+    user1 = await userInstance.save()
     return user1
 }
 //get all users
@@ -22,13 +22,13 @@ updateUser = async (userId,user) => {
     return new_user
 }
 
-updateProject = async (user,projectId) => {
-    let user1 = await User.findByIdAndUpdate(userId,{
+updateProject = async (userId,projectId) => {
+    user = await User.findByIdAndUpdate(userId,{
         $push:{
             projects: projectId
         }
     })
-    return user1
+    return user
 }
 
 //Delete an user
