@@ -8,8 +8,8 @@ createUser = async (user) => {
 }
 //get all users
 getUsers = async () => {
-    let users = await User.find({})
-    return users
+    let user = await User.find({}).populate({path: 'projects', model: User})
+    return user
 }
 //get only one user
 getUserById = async (userId) => {

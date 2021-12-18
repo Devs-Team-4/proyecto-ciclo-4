@@ -32,7 +32,7 @@
  .topbarIconContainer{
     position: relative;
     cursor: pointer;
-    margin-right: 10px;
+    margin-left: 10px;
     color:white;
  }
 .topbarIconContainer i{
@@ -57,5 +57,84 @@
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
-    
+    object-fit: cover;
  }
+.action{
+   position: fixed;
+   right: 30px;
+}
+.action .menu{
+   position: absolute;
+   top: 100px;
+   right: -16px;
+   padding: 10px 20px;
+   background:#232a34;
+   color: white;
+   width: 200px;
+   box-sizing: 0 5px 25px rgba(0,0,0,0,1);
+   border-radius: 15px;
+   transition: 0.5s;
+   visibility: hidden;
+   opacity: 0;
+ }
+.action .menu.active{
+   top:45px;
+   visibility: visible;
+   opacity: 1;
+}
+
+.action .menu::before{
+   content: '';
+   position: absolute;
+   top: -5px;
+   right: 19px;
+   width: 20px;
+   height: 20px;
+   background:#232a34;
+   transform: rotate(45deg);
+}
+.separador{
+   background-color:white;
+   margin-bottom: 10px;
+}
+ .action .menu h3{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 20px 0px;
+    line-height: 1.2em;
+ }
+
+ .action .menu h3 span{
+    font-size: 15px;
+    font-weight: 300;
+ }
+
+ .action .menu ul{
+    padding: 0px 20px;
+ }
+ .action .menu ul li{
+   list-style: none;
+   padding: 8px 0px;
+   border-top: 1px solid rgba(0,0,0,0,1);
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+
+ .action .menu ul li i{
+    max-width: 20px;
+    margin-right: 10px;
+ }
+
+ .action .menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+ }
+
+ .action .menu ul li:hover{
+   color:silver;
+ }
+
