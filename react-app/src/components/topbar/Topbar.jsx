@@ -1,4 +1,5 @@
  import React from 'react'
+ import { Link } from 'react-router-dom'
  import './topbar.css'
  
 
@@ -7,7 +8,9 @@
          <div className="topbar">
             <div className="topbarWrapper">
                 <div className="topLeft">
-                    <span className="logo">Developers_MisionTic</span>
+                    <Link to="/" className="link">
+                        <span className="logo">Developers_MisionTic</span>
+                    </Link>
                 </div>
                 <div className="topRight">
                     <div className="topbarIconContainer">
