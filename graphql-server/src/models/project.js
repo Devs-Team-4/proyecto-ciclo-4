@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const user = require('./user');
+const User = require('./user');
 
 const projectSchema = new Schema({
     nombre:{type:String},
@@ -9,12 +9,11 @@ const projectSchema = new Schema({
     fechaInicio: {type:Date,default: Date.now},
     fechaFin: {type:Date},
     owner : {
-        type:Schema.Types.ObjectId,
-        ref: "user"    
+        type: Schema.Types.ObjectId,
+        ref: 'User'    
     },
     is_active : {type:Boolean},
-    fase_proyecto: {type: String,default: "null",
-    }
+    fase_proyecto: {type: String}
 })
 
-module.exports = mongoose.model("Project",projectSchema)
+module.exports = mongoose.model('Project',projectSchema);

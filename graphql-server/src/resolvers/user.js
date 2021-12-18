@@ -20,7 +20,7 @@ const userResolvers ={
         updateUser: async (parent,args) => {
             let user_update = await userService.updateUser(args._id,args)
             return user_update
-        },
+        }
     }
 }
 

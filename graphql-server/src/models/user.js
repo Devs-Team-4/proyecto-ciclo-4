@@ -10,10 +10,12 @@ const userSchema = new Schema({
     password : {type:String,required:true},
     rol : {type:String},
     estado : {type:String},
-    projects: [{
-        type: Schema.Types.ObjectId,
-        ref: "Project"
-    }]
+    projects: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Project'
+        }
+    ]
 })
 
-module.exports = mongoose.model("User",userSchema)
+module.exports = mongoose.model('User',userSchema)

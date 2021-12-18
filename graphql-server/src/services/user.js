@@ -8,7 +8,7 @@ createUser = async (user) => {
 }
 //get all users
 getUsers = async () => {
-    let user = await User.find({}).populate({path: 'projects', model: User})
+    let user = await User.find({}).populate("projects")
     return user
 }
 //get only one user
@@ -23,7 +23,7 @@ updateUser = async (userId,user) => {
 }
 
 updateProject = async (userId,projectId) => {
-    user = await User.findByIdAndUpdate(userId,{
+    let user = await User.findByIdAndUpdate(userId,{
         $push:{
             projects: projectId
         }

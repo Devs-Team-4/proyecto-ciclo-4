@@ -37,31 +37,6 @@ export default function Sidebar() {
                         </li>
                     </ul>
                 </div>
-                <div className="sidebarMenu">
-                    <h3 className="sidebarTitle">Tools</h3>
-                    <ul className="sidebarList">
-                        <li className="sidebarListItem">
-                            <i class="fas fa-home"></i>
-                            Home
-                        </li>
-                        <li className="sidebarListItem">
-                            <i class="fas fa-users"></i>
-                            Users
-                        </li>
-                        <li className="sidebarListItem">
-                            <i class="fas fa-book-open"></i>
-                            Proyects
-                        </li>
-                        <li className="sidebarListItem">
-                            <i class="fas fa-book-medical"></i>
-                            Articles
-                        </li>
-                        <li className="sidebarListItem">
-                            <i class="fas fa-cloud"></i>
-                            Pages
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
     )

@@ -3,17 +3,6 @@ const {gql} = require('apollo-server-express');
 const userType = gql`
     scalar Date
 
-    type User{
-        _id : ID!
-        nombre : String
-        apellido: String
-        identificacion: String
-        correo : String!
-        password : String!
-        rol : String
-        estado : String
-        projects : [Project]
-    }
     type Project{
         _id : ID!
         nombre : String
@@ -26,6 +15,18 @@ const userType = gql`
         fase_proyecto: String
     }
 
+    type User{
+        _id : ID!
+        nombre : String
+        apellido: String
+        identificacion: String
+        correo : String!
+        password : String!
+        rol : String
+        estado : String
+        projects : [Project]
+    }
+    
     type Query {
         getUsers:[User]
         getUserById(_id:String): User
@@ -53,6 +54,6 @@ const userType = gql`
             estado : String
         ):User
     }
-`;
+`
 
 module.exports = {userType}
