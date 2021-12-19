@@ -1,11 +1,11 @@
-const Project = require('../models/project');
-const userService = require('./user');
+const Project = require('../models/project')
+const userService = require('./user')
 
 //Create Project
 createProject = async (project) => {
     let projectInstance = new Project(project)
-    let created_project = await projectInstance.save()
-    await userService.updateProject(Project['owner'],created_project['_id'])
+    created_project = await projectInstance.save()
+    await userService.UpdateProject(project['owner'], created_project['_id'])
     return created_project
 }
 //get all users
@@ -20,8 +20,8 @@ getProjectById = async (projectId) => {
 }
 //update an user
 updateProject = async (projectId,project) => {
-    let new_project = await Project.findByIdAndUpdate(projectId,project,{new: true})
-    return new_project
+    newProject = await Project.findByIdAndUpdate(projectId,project,{new: true})
+    return newProject
 }
 module.exports = {
     createProject,

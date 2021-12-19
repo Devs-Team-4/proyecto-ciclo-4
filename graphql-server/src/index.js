@@ -2,13 +2,10 @@
 //Importaciones a Librerias
 const express = require('express');
 const mongoose = require('mongoose');
+const { ApolloServer } = require('apollo-server-express');
+const {resolvers} = require('./resolvers');
+const {types} = require('./types');
 const morgan = require('morgan');
-const {ApolloServer} = require('apollo-server-express');
-
-//Importaciones a servicos propios
-const {resolvers} = require('./resolvers/index');
-const {types} = require('./types/index'); 
-
 
 //Instanciar el Modulo Express
 const app = express();
@@ -28,7 +25,6 @@ mongoose.connect(urldb)
         await server.start()
         server.applyMiddleware({app})
         console.log(`Server listening on port ${app.get('port')}`);
-        //user.createUser()
     })
 })
 .catch(error => console.log(error))

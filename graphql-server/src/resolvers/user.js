@@ -8,7 +8,7 @@ const userResolvers ={
         },
         getUserById: async (parent,args) => {
             let user = await userService.getUserById(args._id)
-            return user
+            /*return user*/
         }
 
     },
@@ -18,7 +18,7 @@ const userResolvers ={
             return user
         },
         updateUser: async (parent,args) => {
-            let user_update = await userService.updateUser(args._id,args)
+            let user_update = userService.updateUser(args._id,args)
             return user_update
         }
     }

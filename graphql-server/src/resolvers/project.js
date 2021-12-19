@@ -3,8 +3,8 @@ const projectService = require('../services/project');
 const projectResolvers ={
     Query:{
         getProjects: async (parent,args) => {
-            let projects = await projectService.getProjects();
-            return projects
+            let project = await projectService.getProjects();
+            return project
         },
         getProjectById: async (parent,args) => {
             let project = await projectService.getProjectById(args._id)
@@ -14,12 +14,12 @@ const projectResolvers ={
     },
     Mutation:{
         createProject: async (parent,args) => {
-            let project = await projectService.createProject(args)
+            let project =  projectService.createProject(args)
             return project
         },
         updateProject: async (parent,args) => {
-            let project_update = await projectService.updateProject(args._id,args)
-            return project_update
+            let project = await projectService.updateProject(args._id,args)
+            return project
         },
     }
 }

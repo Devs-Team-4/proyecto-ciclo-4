@@ -3,8 +3,8 @@ const User = require('../models/user');
 //Create User
 createUser = async (user) => {
     let userInstance = new User(user)
-    user1 = await userInstance.save()
-    return user1
+    user = await userInstance.save()
+    return user
 }
 //get all users
 getUsers = async () => {
@@ -18,14 +18,14 @@ getUserById = async (userId) => {
 }
 //update an user
 updateUser = async (userId,user) => {
-    let new_user = await User.findByIdAndUpdate(userId,user,{new: true})
+    let new_user = User.findByIdAndUpdate(userId,user,{new: true})
     return new_user
 }
 
-updateProject = async (userId,projectId) => {
+UpdateProject = async (userId,projectId) => {
     let user = await User.findByIdAndUpdate(userId,{
         $push:{
-            projects: projectId
+            projects:projectId
         }
     })
     return user
@@ -41,7 +41,7 @@ module.exports = {
     getUsers,
     getUserById,
     updateUser,
-    updateProject,
+    UpdateProject,
     deleteUser
 }
 

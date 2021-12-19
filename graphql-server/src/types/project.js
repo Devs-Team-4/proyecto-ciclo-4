@@ -1,7 +1,6 @@
-const {gql} = require('apollo-server-express');
-const projectType = gql`
-    scalar Date
+const { gql } = require("apollo-server-express")
 
+const projectType = gql`
     type User{
         _id : ID!
         nombre : String
@@ -18,9 +17,9 @@ const projectType = gql`
         nombre : String
         objetivo: String
         presupuesto : String
-        fechaInicio: Date
-        fechaFin: Date
-        owner : ID
+        fechaInicio: String
+        fechaFin: String
+        owner : ID!
         is_active : Boolean
         fase_proyecto: String
     }
@@ -28,27 +27,25 @@ const projectType = gql`
         getProjects:[Project]
         getProjectById(_id:String):Project
     }
-
     type Mutation{
         createProject(
             nombre : String
             objetivo: String
             presupuesto : String
-            fechaInicio: Date
-            fechaFin: Date
-            owner : ID
+            fechaInicio: String
+            fechaFin: String
+            owner : ID!
             is_active : Boolean
             fase_proyecto: String
         ):Project
-
         updateProject(
             _id : ID!
             nombre : String
             objetivo: String
             presupuesto : String
-            fechaInicio: Date
-            fechaFin: Date
-            owner : ID
+            fechaInicio: String
+            fechaFin: String
+            owner : ID!
             is_active : Boolean
             fase_proyecto: String
         ):Project

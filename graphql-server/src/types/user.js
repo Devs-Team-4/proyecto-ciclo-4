@@ -1,8 +1,6 @@
-const {gql} = require('apollo-server-express');
+const {gql} = require("apollo-server-express")
 
 const userType = gql`
-    scalar Date
-
     type User{
         _id : ID!
         nombre : String
@@ -14,15 +12,14 @@ const userType = gql`
         estado : String
         projects : [Project]
     }
-
     type Project{
         _id : ID!
         nombre : String
         objetivo: String
         presupuesto : String
-        fechaInicio: Date
-        fechaFin: Date
-        owner : ID
+        fechaInicio: String
+        fechaFin: String
+        owner : ID!
         is_active : Boolean
         fase_proyecto: String
     }
@@ -42,7 +39,6 @@ const userType = gql`
             rol : String
             estado : String
         ):User
-
         updateUser(
             _id : ID!
             nombre : String
@@ -54,6 +50,6 @@ const userType = gql`
             estado : String
         ):User
     }
-`
+`;
 
 module.exports = {userType}
