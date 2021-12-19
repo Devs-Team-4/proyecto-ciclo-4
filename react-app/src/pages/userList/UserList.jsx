@@ -1,64 +1,80 @@
-import './userList.css'
+import { useQuery } from '@apollo/client'
+import GET_USERS from '../../graphql/getUsers.graphql'
 import MaterialTable from 'material-table'
+import './userList.css'
 
 export default function UserList() {
 
-    const columnas=[
+    const { data, error, loading } = useQuery(GET_USERS);
+
+    if (loading) return <p>Loading..</p>;
+    if (error) return <p>`Error... ${error.message}`</p>;
+
+    const columnas = [
         {
-            title:'Artista',
-            field:'artista'
+            title: 'Name',
+            field: 'name'
         },
         {
-            title:'País de origen',
-            field:'pais'
+            title: 'Lastname',
+            field: 'lastname'
         },
         {
-            title:'Genero(Musical)',
-            field:'genero'
+            title: 'Phone',
+            field: 'phone',
         },
         {
-            title:'Ventas estimadas',
-            field:'ventas',
-            type:"numeric"
+            title: 'Email',
+            field: 'email',
+        },
+        {
+            title: 'State',
+            field: 'state',
         }
-    ]; 
-
-    const data = [
-        {artista:'The Beatles', pais:'Reino unido',genero:'Rock,pop',ventas:1000},
-        {artista:'The Beatles', pais:'Reino unido',genero:'Rock,pop',ventas:1000},
-        {artista:'The Beatles', pais:'Reino unido',genero:'Rock,pop',ventas:1000},
-        {artista:'The Beatles', pais:'Reino unido',genero:'Rock,pop',ventas:1000},
-        {artista:'Queen', pais:'Reino unido',genero:'Rock,pop',ventas:2000}
     ];
-
 
     return (
         <div className="userList">
-            <MaterialTable 
+            <MaterialTable
                 columns={columnas}
-                data={data}
+                data={query =>
+                    new Promise((resolve,reject) => {
+                        resolve({
+                            data: data.getUsers.map((user) => (
+                                { id: `${user._id}`,name: `${user.name}`, lastname: `${user.lastName}`, phone: `${user.phone}`, email: `${user.email}`,state: `${user.state}`}
+                            ))
+                        });
+                    })
+                }
                 title="Lista de Usuarios"
                 actions={[
                     {
+                        icon: 'add',
+                        tooltip: 'Add new user',
+                        isFreeAction:true,
+                        onClick: (Event, rowData) => alert('Has presionado editar el usuario: ' + rowData.artista)
+                    },
+                    {
                         icon: 'edit',
                         tooltip: 'Editar usuario',
-                        onClick:(Event,rowData) => alert('Has presionado editar el usuario: '+rowData.artista)
+                        onClick: (Event, rowData) => alert('Has presionado editar el usuario: ' + rowData.artista)
                     },
                     {
                         icon: 'delete',
                         tooltip: 'Eliminar usuario',
-                        onClick:(Event,rowData) => window.confirm('Has presionado eliminar el usuario: '+rowData.artista+'?')
+                        onClick: (Event, rowData) => window.confirm('Has presionado eliminar el usuario: ' + rowData.artista + '?')
                     }
                 ]}
                 options={{
                     actionsColumnIndex: -1
                 }}
                 localization={{
-                    header:{
-                        actions:'Acciones'
+                    header: {
+                        actions: 'Acciones'
                     }
                 }}
             />
         </div>
+
     )
 }
