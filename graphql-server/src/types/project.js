@@ -2,54 +2,44 @@ const { gql } = require("apollo-server-express")
 
 const projectType = gql`
     type User{
-        _id : ID!
-        nombre : String
-        apellido: String
-        identificacion: String
-        correo : String!
-        password : String!
-        rol : String
-        estado : String
-        projects : [Project]
+        _id: ID!
+        name: String
+        lastName: String
+        phone: String
+        email: String!
+        password: String!
+        state:String
+        projects:[Project]
     }
     type Project{
-        _id : ID!
-        nombre : String
-        objetivo: String
-        presupuesto : String
-        fechaInicio: String
-        fechaFin: String
-        owner : ID!
-        is_active : Boolean
-        fase_proyecto: String
+        _id: ID!
+        name: String
+        description: String
+        topic: String
+        isActive: Boolean
+        owner: ID
     }
     type Query{
         getProjects:[Project]
         getProjectById(_id:String):Project
     }
+
     type Mutation{
         createProject(
-            nombre : String
-            objetivo: String
-            presupuesto : String
-            fechaInicio: String
-            fechaFin: String
-            owner : ID!
-            is_active : Boolean
-            fase_proyecto: String
-        ):Project
+            name: String
+            description: String
+            topic: String
+            isActive: Boolean
+            owner: ID
+        ): Project
         updateProject(
-            _id : ID!
-            nombre : String
-            objetivo: String
-            presupuesto : String
-            fechaInicio: String
-            fechaFin: String
-            owner : ID!
-            is_active : Boolean
-            fase_proyecto: String
+            _id: ID!
+            name: String
+            description: String
+            topic: String
+            isActive: Boolean
         ):Project
     }
-`;
 
-module.exports = {projectType}
+`;
+module.exports = { projectType }

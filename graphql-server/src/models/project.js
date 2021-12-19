@@ -2,18 +2,24 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const User = require('./user')
 
-const ProjectSchema = new Schema({
-    nombre:{type:String},
-    objetivo : {type:String},
-    presupuesto : {type:String},
-    fechaInicio: {type:String},
-    fechaFin: {type:String},
-    owner : {
-        type: Schema.Types.ObjectId,
-        ref: "User"    
+
+const ProjectSchema = new  Schema({
+    name:{
+        type: String
     },
-    is_active : {type:Boolean},
-    fase_proyecto: {type: String}
+    description:{
+        type: String
+    },
+    topic: {
+        type: String
+    },
+    isActive:{
+        type: Boolean
+    },
+    owner: {
+        type: Schema.Types.ObjectId,
+        ref: "User"
+    }
 })
 
-module.exports = mongoose.model("Project",ProjectSchema)
+module.exports = mongoose.model("Project", ProjectSchema)

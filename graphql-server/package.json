@@ -1,31 +1,20 @@
 {
-  "name": "proyecto-ciclo-4",
+  "name": "graphql",
   "version": "1.0.0",
-  "description": "Creación de una aplicación web que resuelva requerimientos de un tercero, que perfectamente puede provenir de una empresa o una organización., Este proyecto esta orientado a la solucion de problemas de MicroServicios.",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Devs-Team-4/proyecto-ciclo-4.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Devs-Team-4/proyecto-ciclo-4/issues"
-  },
-  "homepage": "https://github.com/Devs-Team-4/proyecto-ciclo-4#readme",
   "dependencies": {
     "apollo-server-express": "^3.5.0",
     "express": "^4.17.1",
-    "graphql": "^16.1.0",
     "mongoose": "^6.0.13",
-    "morgan": "^1.10.0"
-  },
-  "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   }
 }
