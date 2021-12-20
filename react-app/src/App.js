@@ -7,6 +7,7 @@ import './app.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import UserList from "./pages/userList/UserList";
 import Roles from "./pages/roles/Roles";
+import Proyects from "./pages/proyects/Proyects"
 
 import client from './client';
 
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/users">
               <UserList />
+            </Route>
+            <Route path="/proyects">
+              <Proyects />
             </Route>
             <Route path="/roles">
               <Roles />

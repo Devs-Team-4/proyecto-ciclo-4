@@ -21,10 +21,12 @@ export default function Sidebar() {
                                 Users
                             </li>
                         </Link>
-                        <li className="sidebarListItem">
-                            <i class="fas fa-book-open"></i>
-                            Proyects
-                        </li>
+                        <Link to="/proyects" className="link">
+                            <li className="sidebarListItem">
+                                <i class="fas fa-book-open"></i>
+                                Proyects
+                            </li>
+                        </Link>
                         <Link to="/roles" className="link">
                             <li className="sidebarListItem">
                                 <i class="fas fa-book-medical"></i>
