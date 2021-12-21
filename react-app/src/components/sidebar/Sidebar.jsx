@@ -12,19 +12,19 @@ export default function Sidebar() {
                         <Link to="/" className="link">
                             <li className="sidebarListItem active">
                                 <i class="fas fa-home"></i>
-                                Home
+                                Inicio
                             </li>
                         </Link> 
                         <Link to="/users" className="link">
                             <li className="sidebarListItem">
                                 <i class="fas fa-users"></i>
-                                Users
+                                Usuarios
                             </li>
                         </Link>
                         <Link to="/proyects" className="link">
                             <li className="sidebarListItem">
                                 <i class="fas fa-book-open"></i>
-                                Proyects
+                                Proyectos
                             </li>
                         </Link>
                         <Link to="/roles" className="link">
@@ -35,7 +35,7 @@ export default function Sidebar() {
                         </Link>
                         <li className="sidebarListItem">
                             <i class="fas fa-cloud"></i>
-                            Pages
+                            Registrar Proyectos
                         </li>
                     </ul>
                 </div>

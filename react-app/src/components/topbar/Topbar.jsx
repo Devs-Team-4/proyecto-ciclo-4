@@ -15,7 +15,7 @@
             <div className="topbarWrapper">
                 <div className="topLeft">
                     <Link to="/" className="link">
-                        <span className="logo">Developers_MisionTic</span>
+                        <span className="logo">Web Developers</span>
                     </Link>
                 </div>
                 <div className="topRight">
